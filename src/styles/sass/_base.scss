@@ -1,0 +1,32 @@
+//----------------------------------------------
+// This contains basic styles
+//----------------------------------------------
+
+/**
+* Make all elements have border-box box model by applying
+* the style to the root html element then applying it all
+* the others through inherit property for a specificity of 0
+* See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+* Apply basic styles and remove text decorations for links
+*/
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
