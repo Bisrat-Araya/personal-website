@@ -1,0 +1,25 @@
+//----------------------------------------------
+// This contains styles to reset the default styles
+// https://elad2412.github.io/the-new-css-reset/
+//----------------------------------------------
+
+/*
+* Remove all the user-agent styles
+* and display reset
+*/
+*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Remove list styles e.g., bullets & number */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* Limit image sizes to be within their container */
+img {
+  max-width: 100%;
+}
