@@ -8,3 +8,34 @@ body {
   font-family: variables.$font-sans;
   font-size: map-get($map: variables.$font-base-size, $key: 'font-size');
 }
+
+// temporary variable to map through the heading font sizes
+$font-sizes: (
+  'font-sm': variables.$font-sm,
+  'font-md': variables.$font-md,
+  'font-lg': variables.$font-lg,
+  'font-xl': variables.$font-xl,
+  'font-xxl': variables.$font-xxl,
+);
+// mapping through the heading font-sizes interpolation to
+// assign font-size, line-height, & font-weight respectively to each heading
+@each $fs, $var in $font-sizes {
+  .heading--#{$fs} {
+    font-size: map-get($map: $var, $key: 'font-size');
+    line-height: map-get($map: $var, $key: 'line-height');
+    font-weight: map-get($map: $var, $key: 'font-weight');
+  }
+}
+
+.heading {
+  text-align: center;
+
+  &--font-sm {
+    color: variables.$color-accent;
+    font-family: variables.$font-mono;
+  }
+
+  &--font-xl {
+    color: variables.$color-secondary-variant;
+  }
+}
