@@ -75,4 +75,22 @@ body {
   width: 100%;
 }
 
+/* Font Family */
+/* Font Sizes, Line heights, and Font weights */
+/* Colors */
+/* Media query breakpoints */
+.c-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+
+.c-nav__list {
+  display: flex;
+  gap: 5vw;
+}
+
 /*# sourceMappingURL=index.css.map */

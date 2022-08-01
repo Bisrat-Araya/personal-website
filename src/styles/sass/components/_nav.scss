@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+
+.c-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  // background-color: variables.$color-primary;
+}
+
+.c-nav__list {
+  display: flex;
+  gap: 5vw;
+}
