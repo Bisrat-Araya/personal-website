@@ -2,6 +2,8 @@
 // This contains basic styles
 //----------------------------------------------
 
+@use '../abstracts/variables';
+
 /**
 * Make all elements have border-box box model by applying
 * the style to the root html element then applying it all
@@ -10,6 +12,10 @@
 */
 html {
   box-sizing: border-box;
+}
+
+body {
+  background-color: variables.$color-primary;
 }
 
 *,

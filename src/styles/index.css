@@ -2,6 +2,10 @@
 /* Font Sizes, Line heights, and Font weights */
 /* Colors */
 /* Media query breakpoints */
+/* Font Family */
+/* Font Sizes, Line heights, and Font weights */
+/* Colors */
+/* Media query breakpoints */
 /**
 * Make all elements have border-box box model by applying
 * the style to the root html element then applying it all
@@ -10,6 +14,10 @@
 */
 html {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #1d3658;
 }
 
 *,
