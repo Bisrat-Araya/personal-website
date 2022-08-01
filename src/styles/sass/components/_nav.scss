@@ -14,3 +14,8 @@
   display: flex;
   gap: 5vw;
 }
+
+.c-nav__item {
+  font-family: variables.$font-mono;
+  font-size: map-get($map: variables.$font-xxs, $key: font-size);
+}

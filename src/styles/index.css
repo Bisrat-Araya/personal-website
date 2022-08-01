@@ -72,7 +72,15 @@ body {
 }
 
 .l-header {
-  height: 80px;
+  height: 120px;
+  width: 100%;
+}
+
+.l-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
   width: 100%;
 }
 
@@ -92,6 +100,11 @@ body {
 .c-nav__list {
   display: flex;
   gap: 5vw;
+}
+
+.c-nav__item {
+  font-family: "Fira Code", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 0.813rem;
 }
 
 /*# sourceMappingURL=index.css.map */
