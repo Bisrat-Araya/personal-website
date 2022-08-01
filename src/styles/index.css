@@ -116,12 +116,13 @@ body {
 /* Colors */
 /* Media query breakpoints */
 .c-button--small, .c-button--large {
+  color: hsl(183deg, 100%, 36%);
   padding: 12px 25px;
   border: 3px solid hsl(183deg, 100%, 36%);
   border-radius: 8px;
 }
 .c-button--small:hover, .c-button--large:hover {
-  background-color: hsl(183deg, 100%, 36%);
+  background-color: rgba(0, 174, 184, 0.1);
 }
 
 .c-button--large {
