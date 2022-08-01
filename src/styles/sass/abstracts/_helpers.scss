@@ -1,7 +1,20 @@
 //---------------------------------------------------
 // This contains the css helper classes
 //---------------------------------------------------
+@use '../abstracts/variables';
 
 .h-txt-center {
   text-align: center;
+}
+
+.h-txt-mono {
+  font-family: variables.$font-mono;
+}
+
+.h-txt-color-sec-var {
+  color: variables.$color-secondary-variant;
+}
+
+.h-txt-color-accent {
+  color: variables.$color-accent;
 }

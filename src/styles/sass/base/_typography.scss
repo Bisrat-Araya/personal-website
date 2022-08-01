@@ -7,6 +7,8 @@ body {
   color: variables.$color-secondary;
   font-family: variables.$font-sans;
   font-size: map-get($map: variables.$font-base-size, $key: 'font-size');
+  line-height: map-get($map: variables.$font-base-size, $key: 'line-height');
+  font-weight: map-get($map: variables.$font-base-size, $key: 'font-weight');
 }
 
 // temporary variable to map through the heading font sizes
@@ -29,13 +31,4 @@ $font-sizes: (
 
 .heading {
   text-align: center;
-
-  &--font-sm {
-    color: variables.$color-accent;
-    font-family: variables.$font-mono;
-  }
-
-  &--font-xl {
-    color: variables.$color-secondary-variant;
-  }
 }
