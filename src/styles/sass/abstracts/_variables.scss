@@ -1,0 +1,35 @@
+//---------------------------------------------------
+// This contains the website design system variables
+//---------------------------------------------------
+
+/* Font Family */
+// Basic font family
+$font-sans: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif !default;
+
+// Mono font family
+$font-sans: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif !default;
+
+/* Font Sizes */
+$font-xxxs: (0.75rem, 1, Regular) !default;
+$font-xxs: (0.813rem, 1, Regular) !default;
+$font-xs: (0.875rem, 1, Regular) !default;
+$font-sm: (1rem, 1, Regular) !default;
+$font-base-size: (1.25rem, 1, Regular) !default;
+$font-md: (1.5rem, 1, Medium) !default;
+$font-lg: (2.25rem, 1, Medium) !default;
+$font-xl: (4.5rem, 1, Bold) !default;
+$font-xxl: (6rem, 1, Bold) !default;
+
+/* Colors */
+// Primary colors
+$primary: hsla(215, 50%, 23%, 1) !default; // prussian-blue
+$primary-variant: hsla(216, 35%, 29%, 1) !default; // indigo-dye
+
+// Secondary colors
+$secondary: hsla(58, 89%, 93%, 1) !default; // light-yellow
+$secondary-variant: hsla(107, 6%, 70%, 1) !default; // ash-gray
+
+// Accent color
+$accent: hsla(183, 100%, 36%, 1) !default; // maximum-blue-green
