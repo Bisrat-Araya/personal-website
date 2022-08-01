@@ -1,0 +1,9 @@
+//----------------------------------------------
+// This contains basic typography styles
+//----------------------------------------------
+@use '../abstracts/variables';
+
+body {
+  color: variable.$color-secondary;
+  font-size: map-get($map: variable.$font-base-size, $key: 'font-size');
+}
