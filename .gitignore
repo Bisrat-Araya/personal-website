@@ -1,4 +1,4 @@
 .vscode/
 .prettierrc
-.css
-.css.map
+index.css
+index.css.map
