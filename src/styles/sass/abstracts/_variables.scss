@@ -4,11 +4,11 @@
 
 /* Font Family */
 // Basic font family
-$font-sans: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
+$font-sans: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
   'Arial', sans-serif !default;
 
 // Mono font family
-$font-sans: Roboto, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
+$font-mono: 'Fira Code', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
   'Arial', sans-serif !default;
 
 /* Font Sizes, Line heights, and Font weights */
@@ -68,7 +68,7 @@ $color-secondary: hsla(58, 89%, 93%, 1) !default; // light-yellow
 $color-secondary-variant: hsla(107, 6%, 70%, 1) !default; // ash-gray
 
 // Accent color
-$color-: hsla(183, 100%, 36%, 1) !default; // maximum-blue-green
+$color-accent: hsla(183, 100%, 36%, 1) !default; // maximum-blue-green
 
 /* Media query breakpoints */
 $breakpoints: (
