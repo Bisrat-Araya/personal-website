@@ -18,6 +18,9 @@
 .c-nav__item {
   font-family: variables.$font-mono;
   font-size: map-get($map: variables.$font-xxs, $key: font-size);
+  &:hover {
+    color: variables.$color-accent;
+  }
 }
 
 .c-nav__link {
