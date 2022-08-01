@@ -60,6 +60,7 @@ img {
 /* Media query breakpoints */
 body {
   color: #fdfcdd;
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.25rem;
 }
 

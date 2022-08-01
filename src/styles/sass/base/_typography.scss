@@ -5,5 +5,6 @@
 
 body {
   color: variables.$color-secondary;
+  font-family: variables.$font-sans;
   font-size: map-get($map: variables.$font-base-size, $key: 'font-size');
 }
