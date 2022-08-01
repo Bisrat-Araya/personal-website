@@ -24,12 +24,12 @@ $font-xxl: (6rem, 1, Bold) !default;
 
 /* Colors */
 // Primary colors
-$primary: hsla(215, 50%, 23%, 1) !default; // prussian-blue
-$primary-variant: hsla(216, 35%, 29%, 1) !default; // indigo-dye
+$color-primary: hsla(215, 50%, 23%, 1) !default; // prussian-blue
+$color-primary-variant: hsla(216, 35%, 29%, 1) !default; // indigo-dye
 
 // Secondary colors
-$secondary: hsla(58, 89%, 93%, 1) !default; // light-yellow
-$secondary-variant: hsla(107, 6%, 70%, 1) !default; // ash-gray
+$color-secondary: hsla(58, 89%, 93%, 1) !default; // light-yellow
+$color-secondary-variant: hsla(107, 6%, 70%, 1) !default; // ash-gray
 
 // Accent color
-$accent: hsla(183, 100%, 36%, 1) !default; // maximum-blue-green
+$color-: hsla(183, 100%, 36%, 1) !default; // maximum-blue-green
