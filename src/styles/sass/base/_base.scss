@@ -22,11 +22,11 @@ html {
 * Apply basic styles and remove text decorations for links
 */
 a {
-  color: $brand-color;
+  // color: $brand-color;
   text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+  // @include on-event {
+  //   color: $text-color;
+  //   text-decoration: underline;
+  // }
 }
