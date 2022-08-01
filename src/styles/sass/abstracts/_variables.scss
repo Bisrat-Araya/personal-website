@@ -33,3 +33,10 @@ $color-secondary-variant: hsla(107, 6%, 70%, 1) !default; // ash-gray
 
 // Accent color
 $color-: hsla(183, 100%, 36%, 1) !default; // maximum-blue-green
+
+/* Media query breakpoints */
+$breakpoints: (
+  small: 480px,
+  medium: 700px,
+  large: 1024px,
+);
