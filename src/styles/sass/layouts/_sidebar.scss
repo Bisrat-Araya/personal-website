@@ -1,0 +1,12 @@
+.l-sidebar {
+  position: absolute;
+  top: 30vh;
+  right: 0;
+  writing-mode: vertical-rl;
+}
+
+.l-sidebar--left {
+  @extend .l-sidebar;
+  top: 50vh;
+  left: 0;
+}
