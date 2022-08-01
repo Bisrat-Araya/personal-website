@@ -107,4 +107,8 @@ body {
   font-size: 0.813rem;
 }
 
+.c-nav__link {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.css.map */

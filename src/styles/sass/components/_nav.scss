@@ -19,3 +19,7 @@
   font-family: variables.$font-mono;
   font-size: map-get($map: variables.$font-xxs, $key: font-size);
 }
+
+.c-nav__link {
+  cursor: pointer;
+}
