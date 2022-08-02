@@ -1,6 +1,7 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
 
+// TODO: Change the makeshift solution for right side alignment
 $grid-areas: ('header', 'figure', 'body');
 .c-project-card {
   display: grid;
@@ -15,12 +16,9 @@ $grid-areas: ('header', 'figure', 'body');
     grid-template-areas: 'figure text';
     text-align: right;
 
-    .c-project-card__text-content {
+    * {
       align-items: flex-end !important;
-    }
-
-    .c-project-card__body {
-      align-items: flex-end !important;
+      justify-content: flex-end !important;
     }
   }
 }
@@ -64,7 +62,7 @@ $grid-areas: ('header', 'figure', 'body');
   padding: 0 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .c-tags__list {
