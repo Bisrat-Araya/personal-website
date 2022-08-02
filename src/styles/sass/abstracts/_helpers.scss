@@ -11,6 +11,10 @@
   font-family: variables.$font-mono;
 }
 
+.h-txt-spacing-wide {
+  letter-spacing: 0.1em;
+}
+
 .h-txt-color-sec-var {
   color: variables.$color-secondary-variant;
 }
