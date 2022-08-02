@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 .c-socials {
   display: flex;
   align-items: center;
@@ -11,3 +13,13 @@
   flex-direction: row;
   gap: 30px;
 }
+
+// .c-socials__icon {
+//   &--github > * {
+//     stroke: variables.$color-accent;
+//   }
+//   &--linkedin > *,
+//   &--codepen > * {
+//     fill: variables.$color-accent;
+//   }
+// }
