@@ -60,8 +60,11 @@ $grid-areas: ('header', 'figure', 'body');
   background-color: variables.$color-primary-variant;
 }
 
-.c-project-card__tags {
+.c-project-card__footer {
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .c-tags__list {
