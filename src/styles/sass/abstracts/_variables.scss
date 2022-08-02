@@ -58,6 +58,15 @@ $font-xxl: (
   'font-weight': 700,
 ) !default;
 
+// font-size map
+$font-sizes-map: (
+  'font-sm': $font-sm,
+  'font-md': $font-md,
+  'font-lg': $font-lg,
+  'font-xl': $font-xl,
+  'font-xxl': $font-xxl,
+);
+
 /* Colors */
 // Primary colors
 $color-primary: hsla(215, 50%, 23%, 1) !default; // prussian-blue
