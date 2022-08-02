@@ -78,3 +78,9 @@ $grid-areas: ('header', 'figure', 'body');
   font-family: variables.$font-mono;
   @include mixins.applySelectedFontSize('font-xxs');
 }
+
+.c-project-card__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
