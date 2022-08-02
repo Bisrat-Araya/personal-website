@@ -4,14 +4,14 @@
 $grid-areas: ('header', 'figure', 'body');
 .c-project-card {
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 45% auto;
   grid-template-areas: 'text figure';
   align-items: center;
   gap: 10px;
   text-align: left;
 
   &--right {
-    grid-template-columns: auto 40%;
+    grid-template-columns: auto 45%;
     grid-template-areas: 'figure text';
     text-align: right;
 
