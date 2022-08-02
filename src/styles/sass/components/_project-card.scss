@@ -37,9 +37,11 @@ $grid-areas: ('header', 'figure', 'body');
   grid-area: figure;
 }
 
-// .c-project-card__header {
-//   align-self: end;
-// }
+.c-project-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .c-project-card__title {
   @include mixins.applyFontSizes;
