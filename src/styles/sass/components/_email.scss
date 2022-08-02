@@ -1,0 +1,12 @@
+@use '../abstracts/variables';
+
+.c-email {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  padding: 15px 0;
+  font-family: variables.$font-mono;
+  @each $font-style, $value in variables.$font-xxxs {
+    #{$font-style}: $value;
+  }
+}
