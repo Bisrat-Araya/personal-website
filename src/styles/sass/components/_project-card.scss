@@ -2,24 +2,27 @@
 
 $grid-areas: ('header', 'figure', 'body');
 .c-project-card {
-  text-align: left;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    'header figure'
-    'body figure';
-  @each $area in $grid-areas {
-    &__#{$area} {
-      grid-area: unquote($string: $area);
-    }
-  }
+  grid-template-columns: 30% auto;
+  grid-template-areas: 'text figure';
+  gap: 10px;
   &--right {
-    text-align: right;
-    grid-template-areas:
-      'figure header'
-      'figure body';
+    grid-template-columns: auto 30%;
+    grid-template-areas: 'figure text';
   }
+  background-color: grey;
+}
+
+.c-project-card__text-content {
+  grid-area: text;
+}
+
+.c-project-card__figure {
+  grid-area: figure;
+}
+
+.c-project-card__header {
+  align-self: end;
 }
 
 .c-project-card__title {
