@@ -1,4 +1,19 @@
+$grid-areas: ('header', 'figure', 'body');
 .c-project-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'header figure'
+    'body figure';
+  @each $area in $grid-areas {
+    &__#{$area} {
+      grid-area: unquote($string: $area);
+    }
+  }
+  &--right {
+    grid-template-areas:
+      'figure header'
+      'figure body';
+  }
 }
