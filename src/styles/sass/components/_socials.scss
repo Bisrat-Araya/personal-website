@@ -1,0 +1,13 @@
+.c-socials {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  padding: 15px 0;
+  // background-color: grey;
+}
+
+.c-socials__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
