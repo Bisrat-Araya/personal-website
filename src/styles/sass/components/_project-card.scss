@@ -1,5 +1,8 @@
+@use '../abstracts/mixins';
+
 $grid-areas: ('header', 'figure', 'body');
 .c-project-card {
+  text-align: left;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -12,8 +15,13 @@ $grid-areas: ('header', 'figure', 'body');
     }
   }
   &--right {
+    text-align: right;
     grid-template-areas:
       'figure header'
       'figure body';
   }
+}
+
+.c-project-card__title {
+  @include mixins.applyFontSizes;
 }
