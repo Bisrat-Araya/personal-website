@@ -9,6 +9,7 @@ $grid-areas: ('header', 'figure', 'body');
   align-items: center;
   gap: 10px;
   text-align: left;
+
   &--right {
     grid-template-columns: auto 40%;
     grid-template-areas: 'figure text';
@@ -17,8 +18,11 @@ $grid-areas: ('header', 'figure', 'body');
     .c-project-card__text-content {
       align-items: flex-end !important;
     }
+
+    .c-project-card__body {
+      align-items: flex-end !important;
+    }
   }
-  background-color: grey;
 }
 
 .c-project-card__text-content {
@@ -26,7 +30,7 @@ $grid-areas: ('header', 'figure', 'body');
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 30px;
 }
 
 .c-project-card__figure {
@@ -47,7 +51,14 @@ $grid-areas: ('header', 'figure', 'body');
   gap: 20px;
 }
 
+.c-project-card__text {
+  padding: 30px 30px;
+  border-radius: 5px;
+  background-color: variables.$color-primary-variant;
+}
+
 .c-tags__list {
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
