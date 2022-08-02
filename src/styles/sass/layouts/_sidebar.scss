@@ -8,5 +8,6 @@
 .l-sidebar--left {
   @extend .l-sidebar;
   top: 50vh;
+  right: revert;
   left: 0;
 }
