@@ -3,28 +3,51 @@
 $grid-areas: ('header', 'figure', 'body');
 .c-project-card {
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 40% auto;
   grid-template-areas: 'text figure';
+  align-items: center;
   gap: 10px;
+  text-align: left;
   &--right {
-    grid-template-columns: auto 30%;
+    grid-template-columns: auto 40%;
     grid-template-areas: 'figure text';
+    text-align: right;
+
+    .c-project-card__text-content {
+      align-items: flex-end !important;
+    }
   }
   background-color: grey;
 }
 
 .c-project-card__text-content {
   grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .c-project-card__figure {
   grid-area: figure;
 }
 
-.c-project-card__header {
-  align-self: end;
-}
+// .c-project-card__header {
+//   align-self: end;
+// }
 
 .c-project-card__title {
   @include mixins.applyFontSizes;
+}
+
+.c-project-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.c-tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
