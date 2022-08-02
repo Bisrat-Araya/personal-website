@@ -6,7 +6,7 @@
 // mixing that maps through the font modifier to
 // assign font-size, line-height, & font-weight accordingly
 @mixin applyFontSizes {
-  @each $font-style, $var in variables.$font-sizes-map {
+  @each $fs, $var in variables.$font-sizes-map {
     &--#{$fs} {
       font-size: map-get($map: $var, $key: 'font-size');
       line-height: map-get($map: $var, $key: 'line-height');
@@ -15,10 +15,12 @@
   }
 }
 
-// apply a selected font-size map (font-size, line-height, font-weight)
-@mixin applySelectedFontSize($fs) {
-  $fs-map: map-get(variables.$font-sizes-map, $fs);
-  font-size: map-get($map: $fs-map, $key: 'font-size');
-  line-height: map-get($map: $fs-map, $key: 'line-height');
-  font-weight: map-get($map: $fs-map, $key: 'font-weight');
+@mixin applySelectFontSize($fs) {
+  $fs-map: map-get(
+    $map: variables.$font-sizes-map,
+    $key: $fs,
+  );
+  font-size: map-get($fs-map, 'font-size');
+  line-height: map-get($fs-map, 'line-height');
+  font-weight: map-get($fs-map, 'font-weight');
 }
