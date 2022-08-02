@@ -15,7 +15,7 @@
   }
 }
 
-@mixin applySelectFontSize($fs) {
+@mixin applySelectedFontSize($fs) {
   $fs-map: map-get(
     $map: variables.$font-sizes-map,
     $key: $fs,
