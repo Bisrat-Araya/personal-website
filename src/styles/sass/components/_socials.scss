@@ -14,12 +14,16 @@
   gap: 30px;
 }
 
-// .c-socials__icon {
-//   &--github > * {
-//     stroke: variables.$color-accent;
-//   }
-//   &--linkedin > *,
-//   &--codepen > * {
-//     fill: variables.$color-accent;
-//   }
-// }
+.c-socials__icon {
+  color: variables.$color-secondary-variant;
+  &:hover {
+    color: variables.$color-accent;
+  }
+  // &--github > * {
+  //   stroke: variables.$color-accent;
+  // }
+  // &--linkedin > *,
+  // &--codepen > * {
+  //   fill: variables.$color-accent;
+  // }
+}
