@@ -18,3 +18,9 @@
 .c-career-card__time-range {
   @include mixins.applySelectedFontSize('font-sm');
 }
+
+.c-career-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
