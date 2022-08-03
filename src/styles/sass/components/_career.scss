@@ -1,5 +1,20 @@
+@use '../abstracts/mixins';
+
 .c-career-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.c-career-card__title {
+  display: flex;
+  gap: 20px;
+}
+
+.c-career-card__role {
+  @include mixins.applySelectedFontSize('font-md');
+}
+
+.c-career-card__time-range {
+  @include mixins.applySelectedFontSize('font-sm');
 }
