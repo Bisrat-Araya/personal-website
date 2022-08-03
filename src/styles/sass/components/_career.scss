@@ -4,7 +4,7 @@
   width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .c-career-card__title {
@@ -16,13 +16,27 @@
   @include mixins.applySelectedFontSize('font-md');
 }
 
+.c-career-card__company {
+  @include mixins.applySelectedFontSize('font-sm');
+}
+
 .c-career-card__time-range {
   @include mixins.applySelectedFontSize('font-xs');
 }
 
 .c-career-card__list {
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   @include mixins.applySelectedFontSize('font-sm');
+}
+
+.c-career-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  > * {
+    width: fit-content;
+  }
 }
