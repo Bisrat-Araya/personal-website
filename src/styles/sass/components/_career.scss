@@ -1,6 +1,7 @@
 @use '../abstracts/mixins';
 
 .c-career-card {
+  width: 600px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -16,11 +17,12 @@
 }
 
 .c-career-card__time-range {
-  @include mixins.applySelectedFontSize('font-sm');
+  @include mixins.applySelectedFontSize('font-xs');
 }
 
 .c-career-card__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @include mixins.applySelectedFontSize('font-sm');
 }
