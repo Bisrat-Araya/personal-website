@@ -17,7 +17,7 @@
 .c-socials__icon {
   color: variables.$color-secondary-variant;
   &:hover {
-    color: variables.$color-accent;
+    color: $color-hover-txt-default;
   }
   // &--github > * {
   //   stroke: variables.$color-accent;
