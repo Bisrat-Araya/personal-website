@@ -4,34 +4,27 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
+// base font color, family, style
 body {
-  color: variables.$color-secondary;
-  font-family: variables.$font-sans;
-  font-size: map-get($map: variables.$font-base-size, $key: 'font-size');
-  line-height: map-get($map: variables.$font-base-size, $key: 'line-height');
-  font-weight: map-get($map: variables.$font-base-size, $key: 'font-weight');
+  color: $color-secondary;
+  font-family: $font-sans;
+  font-style: normal;
 }
 
-// mapping through the heading font-sizes interpolation to
-// assign font-size, line-height, & font-weight respectively to each heading
+// paragraph font size
+p {
+  @include applySelectedFontSize('font-base');
+}
+
+// headings
+@each $num in (1, 2, 3, 4, 5, 6) {
+  h#{$num} {
+    color: $color-secondary;
+    font-family: $font-sans;
+    text-align: center;
+  }
+}
 
 .heading {
   @include mixins.applyFontSizes;
-  text-align: center;
 }
-// temporary variable to map through the heading font sizes
-// $font-sizes: (
-//   'font-sm': variables.$font-sm,
-//   'font-md': variables.$font-md,
-//   'font-lg': variables.$font-lg,
-//   'font-xl': variables.$font-xl,
-//   'font-xxl': variables.$font-xxl,
-// );
-
-// @each $fs, $var in $font-sizes {
-//   .heading--#{$fs} {
-//     font-size: map-get($map: $var, $key: 'font-size');
-//     line-height: map-get($map: $var, $key: 'line-height');
-//     font-weight: map-get($map: $var, $key: 'font-weight');
-//   }
-// }
