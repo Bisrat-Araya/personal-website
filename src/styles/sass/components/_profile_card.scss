@@ -29,13 +29,14 @@
 
 .c-profile-card__footer {
   width: 50%;
+  margin-top: 10px;
 }
 
 .c-profile-tags__list {
   display: grid;
   grid-template-columns: repeat(3, auto);
   column-gap: 10px;
-  row-gap: 10px;
+  row-gap: 1em;
   margin-left: 20px;
 }
 
