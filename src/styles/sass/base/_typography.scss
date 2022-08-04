@@ -1,8 +1,6 @@
 //----------------------------------------------
 // This contains basic typography styles
 //----------------------------------------------
-@use '../abstracts/variables';
-@use '../abstracts/mixins';
 
 // base font color, family, style
 body {
@@ -17,14 +15,17 @@ p {
 }
 
 // headings
-@each $num in (1, 2, 3, 4, 5, 6) {
-  h#{$num} {
-    color: $color-secondary;
-    font-family: $font-sans;
-    text-align: center;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-secondary;
+  font-family: $font-sans;
+  text-align: center;
 }
 
 .heading {
-  @include mixins.applyFontSizes;
+  @include applyFontSizes;
 }
