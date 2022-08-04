@@ -1,7 +1,7 @@
 .c-button--small {
   color: $color-accent;
   padding: 12px 25px;
-  border: 3px solid $color-accent;
+  border: $border-style-default;
   border-radius: 8px;
   &:hover {
     background-color: $color-hover-bg-default;
