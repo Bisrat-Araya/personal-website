@@ -1,0 +1,16 @@
+@use '../abstracts/mixins';
+
+.l-contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  align-items: center;
+  gap: 8px;
+
+  // TODO: Move the font styling here to a base styling or another solution
+  p {
+    width: 35%;
+    margin: 20px 0 45px 0;
+    @include mixins.applySelectedFontSize('font-sm');
+  }
+}
