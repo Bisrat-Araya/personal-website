@@ -1,3 +1,7 @@
+// TODO: Remove font styling from layout & move to base or another solution
+@use '../abstracts/mixins';
+
 .l-footer {
-  margin-bottom: 40px;
+  margin: 100px 0 40px 0;
+  @include mixins.applySelectedFontSize('font-xxs');
 }
