@@ -8,10 +8,9 @@
 
 // import layout-related sections
 @import 'layouts/page', 'layouts/header', 'layouts/sidebar', 'layouts/main',
-  'layouts/hero', 'layouts/section', 'layouts/_container.scss',
-  'layouts/contact';
+  'layouts/hero', 'layouts/section', 'layouts/_container.scss';
 
 // import components
 @import 'components/nav', 'components/button', 'components/socials',
   'components/email', 'components/project-card', 'components/career',
-  'components/profile_card';
+  'components/profile_card', 'components/contact';
