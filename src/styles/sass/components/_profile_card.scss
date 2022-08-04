@@ -26,3 +26,20 @@
   width: 250px;
   clip-path: circle(125px);
 }
+
+.c-profile-card__footer {
+  width: 50%;
+}
+
+.c-profile-tags__list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-left: 20px;
+}
+
+.c-profile-tags__item {
+  font-family: variables.$font-mono;
+  @include mixins.applySelectedFontSize('font-xxs');
+}
