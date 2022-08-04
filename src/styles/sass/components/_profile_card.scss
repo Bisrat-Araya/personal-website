@@ -1,4 +1,5 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .c-profile-card {
   width: 70%;
@@ -12,6 +13,13 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   align-items: center;
+  column-gap: 50px;
+}
+
+.c-profile-card__text {
+  margin-bottom: 10px;
+  @include mixins.applySelectedFontSize('font-sm');
+  color: variables.$color-secondary-variant;
 }
 
 .c-profile-card__img {
