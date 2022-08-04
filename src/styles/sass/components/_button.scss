@@ -3,6 +3,7 @@
   padding: 12px 25px;
   border: $border-style-default;
   border-radius: 8px;
+  cursor: pointer;
   &:hover {
     background-color: $color-hover-bg-default;
   }
