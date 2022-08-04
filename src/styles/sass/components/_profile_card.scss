@@ -1,0 +1,9 @@
+@use '../abstracts/variables';
+
+.c-profile-card {
+  width: 70%;
+  max-width: 800px;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: variables.$color-primary-variant;
+}
