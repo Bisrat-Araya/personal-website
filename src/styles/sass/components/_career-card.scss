@@ -9,10 +9,13 @@
 
 .c-career-card__title {
   display: flex;
+  align-items: flex-end;
   gap: 20px;
 }
 
 .c-career-card__role {
+  max-width: 230px;
+  border-bottom: 3px solid $color-secondary-variant;
   @include mixins.applySelectedFontSize('font-md');
 }
 
@@ -21,6 +24,7 @@
 }
 
 .c-career-card__time-range {
+  margin-top: 8px;
   @include mixins.applySelectedFontSize('font-xs');
 }
 
