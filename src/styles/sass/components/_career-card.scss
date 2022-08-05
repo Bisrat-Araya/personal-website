@@ -21,7 +21,7 @@
 }
 
 .c-career-card__company {
-  @include mixins.applySelectedFontSize('font-base');
+  @include mixins.applySelectedFontSize('font-sm');
 }
 
 .c-career-card__time-range {
@@ -30,7 +30,6 @@
 }
 
 .c-career-card__list {
-  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -40,8 +39,11 @@
 .c-career-card__item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
-  > * {
-    width: fit-content;
-  }
+  gap: 10px;
+}
+
+.c-career-card__item::before {
+  content: '⟿';
+  color: $color-accent;
+  font-family: $font-mono;
 }
