@@ -10,17 +10,18 @@
 .c-career-card__title {
   display: flex;
   align-items: flex-end;
-  gap: 20px;
+  gap: 10px;
 }
 
 .c-career-card__role {
-  max-width: 230px;
+  max-width: 200px;
+  padding-bottom: 5px;
   border-bottom: 3px solid $color-secondary-variant;
   @include mixins.applySelectedFontSize('font-md');
 }
 
 .c-career-card__company {
-  @include mixins.applySelectedFontSize('font-sm');
+  @include mixins.applySelectedFontSize('font-base');
 }
 
 .c-career-card__time-range {
