@@ -19,6 +19,10 @@
   letter-spacing: 0.1em;
 }
 
+.h-txt-color-secondary {
+  color: $color-secondary;
+}
+
 .h-txt-color-sec-var {
   color: variables.$color-secondary-variant;
 }
