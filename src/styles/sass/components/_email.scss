@@ -6,7 +6,5 @@
   width: 50px;
   padding: 15px 0;
   font-family: variables.$font-mono;
-  @each $font-style, $value in variables.$font-xxxs {
-    #{$font-style}: $value;
-  }
+  @include applySelectedFontSize('font-xxxs');
 }
