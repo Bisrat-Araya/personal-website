@@ -7,4 +7,8 @@
   padding: 15px 0;
   font-family: variables.$font-mono;
   @include applySelectedFontSize('font-xxxs');
+  cursor: pointer;
+  &:hover {
+    color: $color-hover-txt-default;
+  }
 }
