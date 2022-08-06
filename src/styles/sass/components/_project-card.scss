@@ -23,7 +23,7 @@ $grid-areas: ('header', 'figure', 'body');
   }
 }
 
-.c-project-card__text-content {
+.c-project-card__content {
   grid-area: text;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ $grid-areas: ('header', 'figure', 'body');
   gap: 25px;
 }
 
-.c-project-card__text {
+.c-project-card__description {
   padding: 30px 30px;
   border-radius: 5px;
   @include mixins.applySelectedFontSize('font-sm');
