@@ -29,14 +29,14 @@
 }
 
 .c-profile-card__footer {
-  width: 50%;
+  width: 60%;
   margin-top: 10px;
 }
 
 .c-profile-tags__list {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  column-gap: 10px;
+  // column-gap: 5px;
   row-gap: 1em;
   margin-left: 20px;
 }
@@ -44,4 +44,10 @@
 .c-profile-tags__item {
   font-family: variables.$font-mono;
   @include mixins.applySelectedFontSize('font-xxs');
+}
+
+.c-profile-tags__item::before {
+  content: '⟿';
+  color: $color-accent;
+  margin-right: 10px;
 }
