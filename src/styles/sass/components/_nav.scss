@@ -7,7 +7,6 @@
   justify-content: center;
   width: 70%;
   height: 100%;
-  // background-color: variables.$color-primary;
 }
 
 .c-nav__list {
@@ -16,8 +15,8 @@
 }
 
 .c-nav__item {
-  font-family: variables.$font-mono;
-  font-size: map-get($map: variables.$font-xxs, $key: font-size);
+  font-family: $font-mono;
+  @include applySelectedFontSize('font-xxs');
 }
 
 .c-nav__link {
