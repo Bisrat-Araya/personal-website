@@ -14,13 +14,10 @@
   gap: 5vw;
 }
 
-.c-nav__item {
-  font-family: $font-mono;
-  @include applySelectedFontSize('font-xxs');
-}
-
 .c-nav__link {
   cursor: pointer;
+  font-family: $font-mono;
+  @include applySelectedFontSize('font-xxs');
   &:hover {
     color: $color-hover-txt-default;
   }
