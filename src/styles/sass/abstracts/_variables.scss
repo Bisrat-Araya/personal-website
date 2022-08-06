@@ -95,6 +95,9 @@ $color-hover-bg-default: color.adjust(
 $border-color-default: $color-accent;
 $border-style-default: 3px solid $border-color-default;
 
+// List bullet point character
+$list-bullet-char-default: '⟿';
+
 /* Media query breakpoints */
 $breakpoints: (
   small: 480px,

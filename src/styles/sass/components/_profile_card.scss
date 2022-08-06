@@ -47,7 +47,7 @@
 }
 
 .c-profile-tags__item::before {
-  content: '⟿';
+  content: variables.$list-bullet-char-default;
   color: $color-accent;
   margin-right: 10px;
 }

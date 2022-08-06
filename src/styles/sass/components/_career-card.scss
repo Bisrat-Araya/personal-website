@@ -1,4 +1,5 @@
 @use '../abstracts/mixins';
+@use '../abstracts/variables';
 
 .c-career-card {
   width: 500px;
@@ -43,7 +44,7 @@
 }
 
 .c-career-card__item::before {
-  content: '⟿';
+  content: variables.$list-bullet-char-default;
   color: $color-accent;
   font-family: $font-mono;
 }
