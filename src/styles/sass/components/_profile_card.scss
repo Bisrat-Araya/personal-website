@@ -23,8 +23,9 @@
 }
 
 .c-profile-card__img {
-  width: 250px;
-  clip-path: circle(125px);
+  $img-width: 20vw;
+  width: $img-width;
+  clip-path: circle(calc($img-width / 2));
 }
 
 .c-profile-card__footer {
