@@ -16,7 +16,7 @@
   column-gap: 50px;
 }
 
-.c-profile-card__text {
+.c-profile-card__description {
   margin-bottom: 10px;
   @include mixins.applySelectedFontSize('font-sm');
   color: variables.$color-secondary-variant;
