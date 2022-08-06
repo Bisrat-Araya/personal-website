@@ -3,6 +3,8 @@
   padding: 12px 25px;
   border: $border-style-default;
   border-radius: 8px;
+  font-family: $font-mono;
+  @include applySelectedFontSize('font-xxs');
   cursor: pointer;
   &:hover {
     background-color: $color-hover-bg-default;
@@ -12,4 +14,5 @@
 .c-button--large {
   @extend .c-button--small;
   padding: 16px 30px;
+  @include applySelectedFontSize('font-xs');
 }
