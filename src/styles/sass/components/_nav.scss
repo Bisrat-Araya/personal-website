@@ -18,11 +18,11 @@
 .c-nav__item {
   font-family: variables.$font-mono;
   font-size: map-get($map: variables.$font-xxs, $key: font-size);
-  &:hover {
-    color: $color-hover-txt-default;
-  }
 }
 
 .c-nav__link {
   cursor: pointer;
+  &:hover {
+    color: $color-hover-txt-default;
+  }
 }
