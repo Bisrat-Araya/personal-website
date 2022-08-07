@@ -9,6 +9,12 @@ $grid-areas: ('header', 'figure', 'body');
   align-items: center;
   gap: 10px;
   text-align: left;
+  .c-project-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-area: text;
+  }
 
   &--right {
     grid-template-columns: 1fr 45%;
@@ -18,10 +24,6 @@ $grid-areas: ('header', 'figure', 'body');
       align-items: flex-end;
     }
   }
-}
-
-.c-project-card__content {
-  grid-area: text;
 }
 
 .c-project-card__figure {
