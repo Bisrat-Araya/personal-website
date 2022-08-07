@@ -57,14 +57,11 @@ $grid-areas: ('header', 'figure', 'body');
   gap: 15px;
 }
 
-.c-tags__list {
-  width: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .c-tags__item {
+  display: inline;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
   font-family: variables.$font-mono;
   @include mixins.applySelectedFontSize('font-xxs');
 }
