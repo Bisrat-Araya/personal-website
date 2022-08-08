@@ -71,3 +71,10 @@ $grid-areas: ('header', 'figure', 'body');
   align-items: center;
   gap: 20px;
 }
+
+.c-project-card__link {
+  cursor: pointer;
+  &:hover {
+    color: $color-hover-txt-default;
+  }
+}
