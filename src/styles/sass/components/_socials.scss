@@ -5,7 +5,6 @@
   align-items: center;
   width: 50px;
   padding: 15px 0;
-  // background-color: grey;
 }
 
 .c-socials__list {
@@ -20,11 +19,4 @@
   &:hover {
     color: $color-hover-txt-default;
   }
-  // &--github > * {
-  //   stroke: variables.$color-accent;
-  // }
-  // &--linkedin > *,
-  // &--codepen > * {
-  //   fill: variables.$color-accent;
-  // }
 }
