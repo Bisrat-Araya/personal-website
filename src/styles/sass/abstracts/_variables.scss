@@ -101,6 +101,9 @@ $list-bullet-char-default: '⟿';
 // Navbar height
 $nav-height: 120px;
 
+// Sidebar width
+$sidebar-width: $nav-height;
+
 /* Media query breakpoints */
 $breakpoints: (
   small: 480px,
