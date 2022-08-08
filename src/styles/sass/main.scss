@@ -1,17 +1,31 @@
 @charset "UTF-8";
 
 // import configurations (abstracts)
-@import 'abstracts/variables', 'abstracts/mixins', 'abstracts/helpers';
+// @import 'abstracts/variables', 'abstracts/mixins', 'abstracts/helpers';
 
 // import base stuff
-@import 'base/base', 'base/reset', 'base/typography';
+@use 'base/base';
+@use 'base/reset';
+@use 'base/typography';
 
 // import layout-related sections
-@import 'layouts/page', 'layouts/header', 'layouts/sidebar', 'layouts/main',
-  'layouts/hero', 'layouts/section', 'layouts/_container.scss', 'layouts/footer',
-  'layouts/career_container';
+@use 'layouts/page';
+@use 'layouts/header';
+@use 'layouts/sidebar';
+@use 'layouts/main';
+@use 'layouts/hero';
+@use 'layouts/section';
+@use 'layouts/_container.scss';
+@use 'layouts/footer';
+@use 'layouts/career_container';
 
 // import components
-@import 'components/nav', 'components/button', 'components/socials',
-  'components/email', 'components/project-card', 'components/career-card',
-  'components/profile_card', 'components/contact', 'components/attribution';
+@use 'components/nav';
+@use 'components/button';
+@use 'components/socials';
+@use 'components/email';
+@use 'components/project-card';
+@use 'components/career-card';
+@use 'components/profile_card';
+@use 'components/contact';
+@use 'components/attribution';

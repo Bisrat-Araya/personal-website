@@ -1,12 +1,11 @@
-@use '../abstracts/variables';
-@use '../abstracts/mixins';
+@use '../abstracts' as a;
 
 .c-profile-card {
   width: 70%;
   max-width: 800px;
   padding: 50px;
   border-radius: 5px;
-  background-color: variables.$color-primary-variant;
+  background-color: a.$color-primary-variant;
 }
 
 .c-profile-card__body {
@@ -18,8 +17,8 @@
 
 .c-profile-card__description {
   margin-bottom: 10px;
-  @include mixins.applySelectedFontSize('font-sm');
-  color: variables.$color-secondary-variant;
+  @include a.applySelectedFontSize('font-sm');
+  color: a.$color-secondary-variant;
 }
 
 .c-profile-card__img {
@@ -42,12 +41,12 @@
 }
 
 .c-profile-tags__item {
-  font-family: variables.$font-mono;
-  @include mixins.applySelectedFontSize('font-xxs');
+  font-family: a.$font-mono;
+  @include a.applySelectedFontSize('font-xxs');
 }
 
 .c-profile-tags__item::before {
-  content: variables.$list-bullet-char-default;
-  color: $color-accent;
+  content: a.$list-bullet-char-default;
+  color: a.$color-accent;
   margin-right: 10px;
 }

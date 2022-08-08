@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts' as a;
 
 .c-nav {
   display: flex;
@@ -16,9 +16,9 @@
 
 .c-nav__link {
   cursor: pointer;
-  font-family: $font-mono;
-  @include applySelectedFontSize('font-xxs');
+  font-family: a.$font-mono;
+  @include a.applySelectedFontSize('font-xxs');
   &:hover {
-    color: $color-hover-txt-default;
+    color: a.$color-hover-txt-default;
   }
 }

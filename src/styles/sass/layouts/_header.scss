@@ -1,7 +1,7 @@
-@use '../abstracts/variables';
+@use '../abstracts' as a;
 
 .l-header {
-  height: variables.$nav-height;
+  height: a.$nav-height;
   width: 100%;
 }
 

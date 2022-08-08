@@ -1,5 +1,5 @@
-@use '../abstracts/mixins';
+@use '../abstracts' as a;
 
 .c-attribution__text {
-  @include mixins.applySelectedFontSize('font-xs');
+  @include a.applySelectedFontSize('font-xs');
 }

@@ -1,17 +1,18 @@
 //----------------------------------------------
 // This contains basic typography styles
 //----------------------------------------------
+@use '../abstracts' as a;
 
 // base font color, family, style
 body {
-  color: $color-secondary-variant;
-  font-family: $font-sans;
+  color: a.$color-secondary-variant;
+  font-family: a.$font-sans;
   font-style: normal;
 }
 
 // paragraph font size
 p {
-  @include applySelectedFontSize('font-base');
+  @include a.applySelectedFontSize('font-base');
 }
 
 // headings
@@ -21,11 +22,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-secondary;
-  font-family: $font-sans;
+  color: a.$color-secondary;
+  font-family: a.$font-sans;
   text-align: center;
 }
 
 .heading {
-  @include applyFontSizes;
+  @include a.applyFontSizes;
 }

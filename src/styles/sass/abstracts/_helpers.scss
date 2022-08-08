@@ -1,7 +1,7 @@
 //---------------------------------------------------
 // This contains the css helper classes
 //---------------------------------------------------
-@use '../abstracts/variables';
+@use 'variables';
 
 .h-txt-center {
   text-align: center;
@@ -20,7 +20,7 @@
 }
 
 .h-txt-color-secondary {
-  color: $color-secondary;
+  color: variables.$color-secondary;
 }
 
 .h-txt-color-sec-var {

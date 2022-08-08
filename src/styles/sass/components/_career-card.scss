@@ -1,5 +1,4 @@
-@use '../abstracts/mixins';
-@use '../abstracts/variables';
+@use '../abstracts' as a;
 
 .c-career-card {
   width: 500px;
@@ -17,24 +16,24 @@
 .c-career-card__role {
   max-width: 200px;
   padding-bottom: 5px;
-  border-bottom: 3px solid $color-secondary-variant;
-  @include mixins.applySelectedFontSize('font-md');
+  border-bottom: 3px solid a.$color-secondary-variant;
+  @include a.applySelectedFontSize('font-md');
 }
 
 .c-career-card__company {
-  @include mixins.applySelectedFontSize('font-sm');
+  @include a.applySelectedFontSize('font-sm');
 }
 
 .c-career-card__time-range {
   margin-top: 8px;
-  @include mixins.applySelectedFontSize('font-xs');
+  @include a.applySelectedFontSize('font-xs');
 }
 
 .c-career-card__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  @include mixins.applySelectedFontSize('font-sm');
+  @include a.applySelectedFontSize('font-sm');
 }
 
 .c-career-card__item {
@@ -44,7 +43,7 @@
 }
 
 .c-career-card__item::before {
-  content: variables.$list-bullet-char-default;
-  color: $color-accent;
-  font-family: $font-mono;
+  content: a.$list-bullet-char-default;
+  color: a.$color-accent;
+  font-family: a.$font-mono;
 }

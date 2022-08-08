@@ -2,7 +2,7 @@
 // This contains basic styles
 //----------------------------------------------
 
-@use '../abstracts/variables';
+@use '../abstracts' as a;
 
 // /**
 // * Make all elements have border-box box model by applying
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background-color: variables.$color-primary;
+  background-color: a.$color-primary;
 }
 
 *,

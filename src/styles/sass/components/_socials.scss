@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts' as a;
 
 .c-socials {
   display: flex;
@@ -14,9 +14,9 @@
 }
 
 .c-socials__icon {
-  color: variables.$color-secondary-variant;
+  color: a.$color-secondary-variant;
   cursor: pointer;
   &:hover {
-    color: $color-hover-txt-default;
+    color: a.$color-hover-txt-default;
   }
 }

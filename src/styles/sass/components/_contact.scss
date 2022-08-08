@@ -1,4 +1,4 @@
-@use '../abstracts/mixins';
+@use '../abstracts' as a;
 
 .c-contact {
   display: flex;
@@ -10,6 +10,6 @@
   p {
     width: 50%;
     margin: 20px 0 35px 0;
-    @include mixins.applySelectedFontSize('font-base');
+    @include a.applySelectedFontSize('font-base');
   }
 }
