@@ -23,7 +23,7 @@
 }
 
 .c-profile-card__img {
-  $img-width: 20vw;
+  $img-width: min(100%, 20vw);
   width: $img-width;
   clip-path: circle(calc($img-width / 2));
 }
